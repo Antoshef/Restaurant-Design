@@ -1,0 +1,29 @@
+@import '../settings/s-breakpoints';
+@import '../settings/s-colors';
+@import '../settings/s-fonts';
+
+.e-burger {
+    width: 30px;
+    flex-direction: column;
+    display: inline-flex;
+    cursor: pointer;
+
+    &:hover {
+
+        div:nth-child(1) {
+            transform: translateY(-5px);
+        }
+
+        div:nth-last-child(1) {
+            transform: translateY(5px);
+        }
+    }
+
+    &__line {
+        transition: transform 0.3s;
+        height: 2px;
+        border-top: 2px solid white;
+        padding: 2px 0;
+        width: 100%;
+    }
+}

@@ -1,0 +1,11 @@
+@import '../settings/s-breakpoints';
+@import '../settings/s-colors';
+@import '../settings/s-fonts';
+
+.c-header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    column-gap: 40px;
+    align-items: flex-start;
+}

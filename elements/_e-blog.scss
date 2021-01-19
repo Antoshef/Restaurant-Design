@@ -1,0 +1,17 @@
+@import '../settings/s-breakpoints';
+@import '../settings/s-colors';
+@import '../settings/s-fonts';
+
+.e-blog {
+    display: none;
+    font-size: 18px;
+
+    a {
+        color: white;
+        margin-left: 40px;
+    }
+
+    @include for-tablet-only {
+        display: inline-block;
+    }
+}

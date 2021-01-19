@@ -1,0 +1,65 @@
+@import '../settings/s-breakpoints';
+@import '../settings/s-colors';
+@import '../settings/s-fonts';
+
+.e-nav {
+    font-family: 'Yusei Magic', sans-serif;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100vw;
+    height: 100vh;
+    font-size: 30px;
+    padding-left: 30px;
+    font-weight: bolder;
+    overflow: hidden;
+    transition: left 0.5s ease-out;
+
+    &__icon {
+        margin: 30px 0;
+        cursor: pointer;
+        display: inline-block;
+
+        &:hover {
+            color: $red;
+        }
+    }
+
+    &__list {
+
+        ul > li {
+            margin-bottom: 10px;
+
+            a:hover {
+                color: $red;
+            }
+
+            &:nth-last-child(1) {
+                margin-bottom: 30px;
+            }
+        }
+    }
+
+    .e-blog {
+        padding: 30px 0;
+        border-top: 1px solid $secondary-400;
+        width: 90%;
+        display: block;
+        font-size: 30px;
+
+        @include for-tablet-landscape-up {
+            width: 95%;
+        }
+
+        a {
+            color: $red;
+            margin-left: 0;
+        }
+    }
+
+    a {
+        color: $black;
+        text-transform: uppercase;
+    }
+}
