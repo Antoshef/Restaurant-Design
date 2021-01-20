@@ -1,0 +1,30 @@
+@import '../settings/s-breakpoints';
+@import '../settings/s-colors';
+@import '../settings/s-fonts';
+
+.c-main__restaurants {
+
+    &-item {
+        margin-bottom: 40px;
+
+        &-title {
+            text-decoration: underline;
+            color: $grey-500;
+            margin-bottom: 20px;
+            cursor: pointer;
+
+            &:hover {
+                color: $black;
+            }
+        }
+
+        &-image {
+            cursor: pointer;
+            max-width: 100%;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+}

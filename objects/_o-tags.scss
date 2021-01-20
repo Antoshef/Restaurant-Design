@@ -2,11 +2,15 @@
 @import '../settings/s-colors';
 @import '../settings/s-fonts';
 
+body {
+    background-color: $secondary-400;
+}
+
 .o-header {
     background: linear-gradient(to bottom, rgba(0,0,0,0.25), rgba(0,0,0,0)), url('https://anytimechefs.com.au/wp-content/uploads/2019/09/chefscook.jpg');
     background-repeat: no-repeat;
     background-size: contain;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     padding: 40px;
     display: flex;
@@ -18,3 +22,34 @@
         background-size: cover;
     }
 }   
+
+.o-main {
+    width: 100;
+    background-color: white;
+    padding: 20px 30px;
+    position: relative;
+    top: -420px;
+
+    @include for-tablet-only {
+        width: 95%;
+        margin: 0 auto;
+        padding: 30px 40px;
+    }
+
+    @include for-tablet-landscape-up {
+        top: -220px;
+        padding: 30px 15%;
+    }
+
+    @include for-desktop-up {
+        width: 90%;
+    }
+
+    h1, h2, h3, h4, h5 {
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    p {
+        font-family: 'Open Sans', sans-serif;
+    }
+}
