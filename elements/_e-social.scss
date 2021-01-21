@@ -1,0 +1,62 @@
+
+.e-social {
+    border-radius: 4px;
+    padding: 1px 5px;
+    height: min-content;
+    color: white;
+    flex-direction: row;
+    display: inline-flex;
+    margin-right: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+
+    span {
+        margin-left: 5px;
+    }
+    
+    &--tweet {
+        background-color: $blue;
+    }
+
+    &--fb {
+        background-color: $dblue;
+    }
+}
+
+.e-recommend {
+    margin-right: 30px;
+    cursor: pointer;
+
+    &:hover {
+        i {
+            color: $red;
+        }
+    }
+
+    i {
+        color: $lightred;
+        margin-right: 5px;
+    }
+}
+
+.e-social-share {
+    display: none;
+    flex-direction: row;
+    position: absolute;
+    left: 75px;
+    column-gap: 10px;
+    font-size: 16px;
+
+    i:nth-child(1) {
+        padding: 3px 7px 0 7px;
+    }
+
+    i {
+        background-color: $grey-400;
+        color: white;
+        padding: 3px 4px;
+        border-radius: 2px;
+    }
+}
+

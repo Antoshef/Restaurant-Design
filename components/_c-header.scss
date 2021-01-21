@@ -8,4 +8,18 @@
     flex-direction: row;
     column-gap: 40px;
     align-items: flex-start;
+    padding: 30px 0 0 40px;
+    height: 80px;
+    transition: background-color 1s;
+
+    @include for-phone-only {
+        height: 60px;
+        padding-top: 25px;
+    }
+}
+
+.sticky {
+    position: fixed;
+    z-index: 5;
+    background-color: black;
 }

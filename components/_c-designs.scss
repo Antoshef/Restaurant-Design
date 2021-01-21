@@ -1,0 +1,114 @@
+@import '../settings/s-breakpoints';
+@import '../settings/s-colors';
+@import '../settings/s-fonts';
+
+.c-main__designs {
+    background-color: $secondary-200;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-between;
+    width: calc(100% + 60px);
+    margin-left: -30px;
+
+    @include for-tablet-only {
+        width: calc(100% + 80px);
+        margin-left: -40px;
+    }
+
+    @include for-tablet-landscape-up {
+        width: calc(130%);
+        margin-left: -15%;
+    }
+
+    &-item {
+        max-width: 100%;
+        background-color: white;
+        transition: background-color .5s;
+        display: flex;
+        flex-direction: column;
+
+        @include for-tablet-only {
+            max-width: 48%;
+        }
+
+        @include for-tablet-landscape-up {
+            max-width: 23%;
+        }
+
+        &:hover {
+            background-color: $black;
+
+            h3 {
+                color: white;
+            }
+
+            p {
+                color: $grey-500;
+            }
+
+            i:nth-child(2) {
+                color: $grass;
+            }
+        }
+
+        &-image {
+            background-position: center;
+            width: 100%;
+            height: 200px;
+            background-size: cover;
+        }
+
+        .image-1 {
+            background-image: url('https://www.intechnic.com/hubfs/Blog/UX%20for%20the%20Entertainment%20and%20Media%20Websites%20-%20from%20Super-Serving%20to%20Hyper-Personalization/UX-for-the-Entertainment-and-Media-Websites---from-Super-Serving-to-Hyper-Personalization.jpg');
+        }
+
+        .image-2 {
+            background-image: url('https://www.intechnic.com/hubfs/Blog/iStock-177036781.jpg');
+        }
+
+        .image-3 {
+            background-image: url('https://www.intechnic.com/hubfs/Blog/Featured%20Images/Best%20Independence%20Day%20Websites%20for%20a%20Great%20Celebration.jpg');
+        }
+
+        .image-4 {
+            background-image: url('https://www.intechnic.com/hubfs/Blog/Featured%20Images/Graphic%20Design%20Process%20for%20New%20Websites%20-%20A%20Guide%20for%20Clients.jpg');
+        }
+
+        &-title {
+            padding: 20px 15px;
+            font-size: 14px;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+
+            @include for-tablet-only {
+                justify-content: space-between;
+            }
+
+            span {
+                font-size: 13px;
+                color: $grey-500;
+            }
+
+            div {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                margin-top: 15px;
+
+                p {
+                    font-size: 14px;
+                    margin-left: 8px;
+                }
+
+                i {
+                    font-size: 8px;
+                    color: $green;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,95 @@
+@import '../settings/s-breakpoints';
+@import '../settings/s-colors';
+@import '../settings/s-fonts';
+
+.c-main__consultation {
+    background-color: $secondary-200;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto;
+    text-align: center;
+    justify-items: center;
+    cursor: pointer;
+    margin-bottom: 50px;
+    overflow: hidden;
+
+    @include for-tablet-landscape-up {
+        grid-template-columns: 35% 65%;
+        grid-template-rows: auto auto auto;
+    }
+
+    &-banner {
+        width: 90%;
+        background-color: $secondary-400;
+        justify-self: flex-start;
+        text-align: left;
+        padding: 7px 20px 7px 40px;
+        margin-top: 20px;
+        position: relative;
+
+        p::after {
+            display: inline-block;
+            content: '';
+            height: 32px;
+            width: 32px;
+            background-color: $secondary-200;
+            position: absolute;
+            right: -23px;
+            top: 0;
+            transform: rotate(45deg);
+        }
+
+        @include for-tablet-landscape-up {
+            grid-column: 1 / 2;
+            grid-row: 1 / 2;
+        }
+    }
+
+    &-image {
+        width: 100px;
+        margin: 30px 0;
+
+        img {
+            width: 100%;
+        }
+
+        @include for-tablet-landscape-up {
+            grid-column: 1 / 2;
+            grid-row: 2 / 4;
+        }
+    }
+
+    &-title {
+        margin: 0 10px;
+
+        h2 {
+            margin-bottom: 20px;
+            font-size: 30px;
+            font-weight: lighter;
+        }
+
+        h4 {
+            font-weight: normal;
+        }
+
+        @include for-tablet-landscape-up {
+            grid-column: 2 / 3;
+            grid-row: 2 / 3;
+        }
+    }
+
+    &-button {
+        font-size: 18px;
+        max-width: 360px;
+        width: 100%;
+        background-color: $red;
+        color: white;
+        margin: 30px 0;
+        padding: 10px 20px;
+
+        @include for-tablet-landscape-up {
+            grid-column: 2 / 3;
+            grid-row: 3 / 4;
+        }
+    }
+}

@@ -1,0 +1,41 @@
+@import '../settings/s-breakpoints';
+@import '../settings/s-colors';
+@import '../settings/s-fonts';
+
+.c-main__autor {
+    padding: 60px 0;
+    border-top: 1px solid $secondary-400;
+    display: grid;
+    grid-template-rows: auto auto auto;
+    row-gap: 20px;
+
+    @include for-tablet-only {
+        grid-template-rows: auto auto;
+        grid-template-columns: auto auto;
+        column-gap: 40px;
+    }
+
+    .c-main__autor-image {
+        width: 100px;
+
+        @include for-tablet-only {
+            grid-row: 1 / 3;
+        }
+
+        img {
+            width: 100%;
+        }
+    }
+
+    p:nth-child(1) {
+        margin-bottom: 20px;
+        font-size: 22px;
+        font-weight: bolder;
+        color: $grey-600;
+    }
+
+    p:nth-child(2) {
+        font-style: italic;
+        font-size: 16px;
+    }
+}
