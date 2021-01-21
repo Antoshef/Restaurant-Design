@@ -18,6 +18,7 @@
 
         ul:nth-child(1) {
             display: flex;
+            flex-wrap: wrap;
 
             li {
                 padding: 10px 0;
@@ -130,7 +131,7 @@
 
     &-input {
         border: 2px solid $grey-300;
-        flex-grow: 1;
+        flex: 1;
         border-radius: 5px;
 
         input {
@@ -138,6 +139,10 @@
             font-family: 'Open Sans', sans-serif;
             font-size: 18px;
             color: $black;
+
+            @include for-small-phone {
+                padding: 17px 0;
+            }
 
             &::placeholder {
                 color: $grey-500;
