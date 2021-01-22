@@ -42,6 +42,10 @@ body {
     position: relative;
     top: -420px;
 
+    @media (max-width: 300px) {
+        top: -510px!important;
+    }
+
     @include for-small-phone {
         top: -480px;
     }

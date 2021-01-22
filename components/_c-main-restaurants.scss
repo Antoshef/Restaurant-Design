@@ -21,6 +21,13 @@
         &-image {
             cursor: pointer;
             max-width: 100%;
+            position: relative;
+
+            &:hover {
+                .e-icons {
+                    opacity: 100;
+                }
+            }
 
             img {
                 width: 100%;

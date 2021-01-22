@@ -12,6 +12,7 @@
     cursor: pointer;
     margin-bottom: 50px;
     overflow: hidden;
+    box-shadow: 1px 1px 6px 1px rgba(0,0,0,0.2);
 
     @include for-tablet-landscape-up {
         grid-template-columns: 35% 65%;

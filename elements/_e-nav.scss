@@ -17,6 +17,10 @@
     transition: left 0.5s ease-out;
     z-index: 4;
 
+    @include for-tablet-only {
+        width: 350px;
+    }
+
     &__icon {
         margin: 30px 0;
         cursor: pointer;
@@ -28,6 +32,18 @@
     }
 
     &__list {
+
+        li:nth-child(3) {
+            a:hover {
+                color: blue;
+            }
+        }
+
+        li:nth-child(4) {
+            a:hover {
+                color: $green;
+            }
+        }
 
         ul > li {
             margin-bottom: 10px;
@@ -44,7 +60,7 @@
 
     .e-blog {
         padding: 30px 0;
-        border-top: 1px solid $secondary-400;
+        border-top: 1px solid $grey-300;
         width: 90%;
         display: block;
         font-size: 30px;

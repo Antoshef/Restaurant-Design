@@ -96,6 +96,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap");
 @import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap");
+@import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
 @import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
 @import url("https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&display=swap");
 body {
@@ -150,6 +157,12 @@ body p, body button, body a, body span {
   padding: 20px 30px;
   position: relative;
   top: -420px;
+}
+
+@media (max-width: 300px) {
+  .o-main {
+    top: -510px !important;
+  }
 }
 
 @media (max-width: 400px) {
@@ -345,6 +358,11 @@ body p, body button, body a, body span {
 .c-main__restaurants-item-image {
   cursor: pointer;
   max-width: 100%;
+  position: relative;
+}
+
+.c-main__restaurants-item-image:hover .e-icons {
+  opacity: 100;
 }
 
 .c-main__restaurants-item-image img {
@@ -364,6 +382,8 @@ body p, body button, body a, body span {
   cursor: pointer;
   margin-bottom: 50px;
   overflow: hidden;
+  -webkit-box-shadow: 1px 1px 6px 1px rgba(0, 0, 0, 0.2);
+          box-shadow: 1px 1px 6px 1px rgba(0, 0, 0, 0.2);
 }
 
 @media (min-width: 900px) {
@@ -841,6 +861,7 @@ body p, body button, body a, body span {
   font-family: 'Open Sans', sans-serif;
   font-size: 18px;
   color: #221F1F;
+  width: 100%;
 }
 
 @media (max-width: 400px) {
@@ -1483,6 +1504,12 @@ body p, body button, body a, body span {
   z-index: 4;
 }
 
+@media (min-width: 600px) {
+  .e-nav {
+    width: 350px;
+  }
+}
+
 .e-nav__icon {
   margin: 30px 0;
   cursor: pointer;
@@ -1491,6 +1518,14 @@ body p, body button, body a, body span {
 
 .e-nav__icon:hover {
   color: #CF2331;
+}
+
+.e-nav__list li:nth-child(3) a:hover {
+  color: blue;
+}
+
+.e-nav__list li:nth-child(4) a:hover {
+  color: #239F46;
 }
 
 .e-nav__list ul > li {
@@ -1507,7 +1542,7 @@ body p, body button, body a, body span {
 
 .e-nav .e-blog {
   padding: 30px 0;
-  border-top: 1px solid #D9C9BA;
+  border-top: 1px solid #d4d4d4;
   width: 90%;
   display: block;
   font-size: 30px;
@@ -1596,6 +1631,54 @@ body p, body button, body a, body span {
   color: white;
   padding: 3px 4px;
   border-radius: 2px;
+}
+
+.e-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-transition: opacity 0.5s linear 0.2s;
+  transition: opacity 0.5s linear 0.2s;
+  opacity: 0;
+  border-radius: 3px;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  overflow: hidden;
+  -webkit-box-shadow: 2px 2px 10px #696969;
+          box-shadow: 2px 2px 10px #696969;
+  position: absolute;
+  left: 15px;
+  bottom: 17px;
+}
+
+.e-icons div {
+  width: 40px;
+  height: 40px;
+  font-size: 30px;
+  text-align: center;
+  padding-top: 3px;
+  cursor: pointer;
+}
+
+.e-icons div a {
+  color: white;
+}
+
+.e-icons__facebook {
+  background-color: #29487d;
+}
+
+.e-icons__twitter {
+  background-color: #4BB7DE;
+}
+
+.e-icons__pinterest {
+  background-color: #CF2331;
 }
 
 .u-none {

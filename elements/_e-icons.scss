@@ -1,0 +1,42 @@
+@import '../settings/s-breakpoints';
+@import '../settings/s-colors';
+@import '../settings/s-fonts';
+
+.e-icons {
+    display: flex;
+    flex-direction: row;
+    transition: opacity 0.5s linear 0.2s;
+    opacity: 0;
+    border-radius: 3px;
+    width: min-content;
+    overflow: hidden;
+    box-shadow: 2px 2px 10px $grey-600;
+    position: absolute;
+    left: 15px;
+    bottom: 17px;
+
+    div {
+        width: 40px;
+        height: 40px;
+        font-size: 30px;
+        text-align: center;
+        padding-top: 3px;
+        cursor: pointer;
+
+        a {
+            color: white;
+        }
+    }
+
+    &__facebook {
+        background-color: $dblue;
+    }
+
+    &__twitter {
+        background-color: $blue;
+    }
+
+    &__pinterest {
+        background-color: $red;
+    }
+}
