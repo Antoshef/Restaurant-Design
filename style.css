@@ -1333,6 +1333,7 @@ body p, body button, body a, body span {
           flex-direction: column;
   border-bottom: 1px solid #696969;
   padding: 10px 0;
+  cursor: pointer;
 }
 
 .c-footer__cities ul li:nth-last-child(1) {

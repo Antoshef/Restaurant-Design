@@ -60,6 +60,7 @@
                 flex-direction: column;
                 border-bottom: 1px solid $grey-600;
                 padding: 10px 0;
+                cursor: pointer;
 
                 &:nth-last-child(1) {
                     border-bottom: none;

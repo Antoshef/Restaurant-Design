@@ -6,11 +6,11 @@ let sticky = header.offsetTop;
 
 function openMenu() {
     nav.style.left = '0';
-}
+};
 
 function closeMenu() {
     nav.style.left = '-100%'
-}
+};
 
 function scroll() {
     if (window.pageYOffset > sticky) {
